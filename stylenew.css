@@ -1,0 +1,112 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-spacing: 0;
+}
+img {
+	border: 0;
+}
+/* Reset */
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #e8e8e8;
+	color: #000;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body, a, input, textarea {
+	font: 14px  Tahoma, Verdana, Helvetica, Arial;
+}
+
+a {
+	color: #0069b4;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-family: "Myriad Pro";
+	font-weight: normal;
+	font-size: 24px;
+}
+ul {
+	padding: 0px 0px 0px 12px;
+}
+
+/* Меню */
+
+.menu {
+	height: 44px;
+	background: #1d2325;
+	border-top: 1px solid #7e7e7e;
+}
+nav {
+	width: 966px;
+	margin: 0px auto;
+	text-align: right;
+}
+nav a {
+	color: #fff;
+	font-size: 15px;
+	padding: 0px 28px 0px 25px;
+    line-height: 44px;
+	display: inline-block;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #1777b6;
+} 
+nav a.active {
+	color: #1777b6;
+	font-weight: bold;
+}
+nav div{
+    display: inline-block;
+    position: relative;
+}
+nav div div{
+    display: none;
+    position: absolute;
+    left:0;
+    top:100%;
+    background: #1D2325;
+    list-style: none;
+    min-width: 100%;
+    z-index: 100;
+    text-align: left;
+    white-space: nowrap;
+}
+nav div:hover div{
+    display: block;
+}
+nav div div a{
+    display: block;
+    border-top:1px solid #7E7E7E;
+    line-height: 36px;
+}
+
+/* Банер */
+.banner {
+	height: 270px;
+    background: url(images/banner.jpg) center top no-repeat; 
+    
+}
+.maintitle{
+    position: relative;
+    font-size: 26px;
+    width: 558px;
+    padding: 20px 20px 16px;
+    top: 10px;
+    background: rgba(255,255,255,.5);
+    color: #fff;
+    margin-left: 2%;
+}

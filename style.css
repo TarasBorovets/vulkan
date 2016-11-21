@@ -1,0 +1,634 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-spacing: 0;
+}
+img {
+	border: 0;
+}
+/* Reset */
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #e8e8e8;
+	color: #000;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body, a, input, textarea {
+	font: 14px  Tahoma, Verdana, Helvetica, Arial;
+}
+
+a {
+	color: #0069b4;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-family: "Myriad Pro";
+	font-weight: normal;
+	font-size: 24px;
+}
+ul {
+	padding: 0px 0px 0px 12px;
+}
+
+.clear {
+	clear: both;
+}
+.center {
+	display: block;
+	text-align: center;
+}
+
+header .h-wrap, .main, footer .f-wrap {
+	width: 966px;
+	margin: 0px auto;
+}
+.main {
+	line-height: 1.6;
+}
+td.min-height {
+	width: 18px;
+}
+.min-height {
+	/*min-height: 300px;*/
+}
+.main td {
+	vertical-align: top;
+}
+.main td h1, .main td h2, .main td h3 {
+	margin: 25px 0px 12px 0px;
+}
+.main td #accordion h3 {
+	margin: 0px 0px 12px 0px;    
+}
+.left, .right {
+	width: 226px;
+}
+.left>*, .right>* {
+	margin: 0px 0px 20px 0px;
+}
+.left {
+	padding: 0px 20px 0px 0px;
+}
+.right {
+	padding: 0px 0px 0px 20px;
+}
+.content {
+	padding-right: 25px;
+	position: relative;
+}
+/* Блоки */
+.block>div {
+	padding: 0px 0px 14px 0px;
+	margin: 0px 0px 14px 0px;
+}
+.block>div:last-of-type {
+	border: 0px;
+	margin: 0px;
+}
+.block .link {
+	margin: 4px 0px 6px 0px;
+	display: block;
+}
+.block .link.active:before {
+	content: '→';
+	font-size: 14px;
+	margin: 0px 2px 0px 0px;
+}
+.block .link.active {
+	color: #000;
+	text-decoration: none;
+}
+.block .pic {
+	float: left;
+	margin: 0px 6px 0px 0px;
+}
+.block .pic img {
+	max-width: 66px;
+}
+.block .all {
+	display: block;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.75); 
+	-moz-box-shadow: inset 0 1px 1px rgba(255,255,255,.75); 
+	box-shadow: inset 0 1px 1px rgba(255,255,255,.75); 
+	background-image: -webkit-linear-gradient(bottom, #1d6082, #0295e4); 
+	background-image: -moz-linear-gradient(bottom, #1d6082, #0295e4); 
+	background-image: -o-linear-gradient(bottom, #1d6082, #0295e4); 
+	background-image: linear-gradient(to top, #1d6082, #0295e4); 
+	width: 105px; 
+	height: 37px;
+	font-family: "Myriad Pro"; font-size: 14px; color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 37px;
+    font-weight: normal;
+}
+
+.news-content {
+	height: 67px;
+	overflow: hidden;
+}
+
+/* Шапка */
+header {
+	height: 93px;
+	background: #303638;
+}
+.h-wrap {
+	position: relative;
+}
+.logo {
+    font-family: "Myriad Pro";
+	position: absolute;
+	left: 0px;
+	top: 24px;
+    font-size: 38px;
+    color:#fff;
+    text-decoration: none;
+}
+.logo:hover {
+    color:#f1f1f1;
+}
+/*   Banner   */
+
+.banner {
+	height: 270px;
+	/*background: url(img/prokat.png) 82% -60px no-repeat, url(img/bg-img-banner.png) center top no-repeat, url(img/bg-banner.png) repeat-x;*/
+    background: url(img/new2.jpg) center top no-repeat, url(img/bg-banner.png) repeat-x;
+}
+.b-wrap {
+	margin: 0 auto;
+	width: 966px;
+	position: relative;
+	color: #fff;
+	font-family: "Myriad Pro";
+}
+.b-wrap .main-title {
+    position: relative;
+	font-size: 26px;
+	width: 558px;
+	padding: 20px 20px 16px;
+    top: 10px;
+    background: rgba(255,255,255,.5);
+}
+
+.b-wrap .assortiment {
+	width: 495px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.b-wrap .assortiment span, .b-wrap .assortiment strong {
+	font-size: 16px;
+	font-weight: bold;
+}
+.b-wrap .assortiment p  {
+	font-family: Arial;
+
+	margin: 0 0 15px;
+}
+
+/* Меню */
+
+.menu {
+	height: 44px;
+	background: #1d2325;
+	border-top: 1px solid #7e7e7e;
+}
+nav {
+	width: 966px;
+	margin: 0px auto;
+	text-align: right;
+}
+nav a {
+	color: #fff;
+	font-size: 15px;
+	padding: 0px 28px 0px 25px;
+    line-height: 44px;
+	display: inline-block;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #1777b6;
+} 
+nav a.active {
+	color: #1777b6;
+	font-weight: bold;
+}
+nav div{
+    display: inline-block;
+    position: relative;
+}
+nav div div{
+    display: none;
+    position: absolute;
+    left:0;
+    top:100%;
+    background: #1D2325;
+    list-style: none;
+    min-width: 100%;
+    z-index: 100;
+    text-align: left;
+    white-space: nowrap;
+}
+nav div:hover div{
+    display: block;
+}
+nav div div a{
+    display: block;
+    border-top:1px solid #7E7E7E;
+    line-height: 36px;
+}
+.phone {
+    font-family: "Myriad Pro";
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	color: #e8e8e8;
+}
+.phone p {
+	font-size: 18px;
+	font-weight: normal;
+}
+.phone strong {
+	font-size: 24px;
+	margin: -4px 0px 0px 0px;
+	display: block;
+    font-weight: normal;
+}
+.phone span {
+	font-size: 15px;
+	color: #00b0f0;
+	vertical-align: top;
+}
+
+.search {
+	background: url(search.png) no-repeat left;
+	height: 46px;
+}
+.search input {
+	border: none;
+	background: transparent;
+	font-style: italic;
+	width: 164px;
+	padding: 14px 15px;
+	color: #818181;
+	height: 16px;
+	vertical-align: middle;
+}
+.search button {
+	width: 20px;
+	height: 20px;
+	background: url(submit.png) no-repeat center;
+	border: none;
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+/*  Accordion   */
+
+#accordion div {
+    display: none;
+}
+#accordion h3 {
+    border-bottom: 1px dashed #333;
+    cursor: pointer;
+}
+
+/* Категории */
+.categories {
+	margin: 0px -10px 10px -10px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.categories>div {
+	display: inline-block;
+	margin: 0px 10px 24px 10px;
+	width: 226px;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.full-cont {
+	padding: 0px 0px 24px 0px;
+}
+
+.items>div, .item {
+	padding: 15px 0px 15px 0px;
+	margin: 0px 0px 6px 0px;
+}
+.datetime {
+	color: #fff;
+	display: inline-block;
+	font-family: Arial; font-size: 12px;
+	margin: 0px 10px 0px 0px;
+	vertical-align: middle;
+	line-height: 19px;
+	color: #b7b7b7;
+}
+.items .link {
+	margin: 4px 0px 6px 0px;
+	display: block;
+}
+.items .pic, .module-pic {
+	float: left;
+	display: block;
+	margin: 0px 12px 0px 0px;
+}
+.related {
+	text-align: left !important;
+}
+
+/* Форма обратной связи */
+.map {
+	overflow: hidden;
+	margin: 0px 0px 24px 0px;
+}
+.feedback {
+	margin: 0px 0px 24px 0px;
+	color: #626262;
+}
+.feedback .name {
+	font-size: 13px;
+	color: #000;
+	margin: 0px 0px 12px 0px;
+}
+.feedback input[type=text], .feedback textarea {
+	border: 1px solid #626262;
+	font-size: 20px;
+	color: #626262;
+	margin: 4px 0px 12px 0px;
+}
+.feedback input[type=text].error, .feedback textarea.error {
+	border: 1px solid #ef4017;
+}
+.feedback input[type=text] {
+	padding: 5px;
+	width: 200px;
+}
+.feedback textarea {
+	height: 150px;
+	padding: 5px;
+	width: 97%;
+}
+.feedback input[name=captcha] {
+	margin: 0px 0px 0px 12px;
+	width: 100px;
+}
+.feedback .captcha {
+	margin: 4px 0px 12px 0px;
+}
+.feedback .red {
+	margin: 0px 0px 0px 12px;
+	color: #ef4017;
+	display: none;
+}
+.feedback .ok {
+	color: #85d70f;
+	margin: 0px 0px 12px 0px;
+	padding: 0px 0px 0px 30px;
+	background: url(ok.png) left center no-repeat;
+}
+.feedback .button {
+	display: block;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.75); 
+	-moz-box-shadow: inset 0 1px 1px rgba(255,255,255,.75); 
+	box-shadow: inset 0 1px 1px rgba(255,255,255,.75); 
+	background-image: -webkit-linear-gradient(bottom, #1d6082, #0295e4); 
+	background-image: -moz-linear-gradient(bottom, #1d6082, #0295e4); 
+	background-image: -o-linear-gradient(bottom, #1d6082, #0295e4); 
+	background-image: linear-gradient(to top, #1d6082, #0295e4); 
+	width: 115px; 
+	height: 37px;
+	font-family: "Myriad Pro"; font-size: 14px; color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+.feedback table {
+	width: 100%;
+}
+
+.adr-box {
+	width: 311px; 
+	height: 140px; 
+	-webkit-border-radius: 12px/11px; 
+	-moz-border-radius: 12px/11px; 
+	border-radius: 12px/11px; 
+	background-color: #eee;
+	padding: 10px 0 0 20px;
+}
+.fphone {
+	font-size: 24px;
+	background: url(img/icon-phone.png) left 9px no-repeat;
+	padding: 0 0 0 30px;
+}
+.femail {
+	background: url(img/icon-mail.png) left 4px no-repeat;
+	min-height: 14px;
+	padding: 0 0 0 30px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.fadr {
+	background: url(img/icon-location.png) left 3px no-repeat;
+	min-height: 20px;
+	font-size: 14px;
+	padding: 0 0 0 30px;
+}
+
+/* Пагинация */
+.paginator {
+	padding: 22px 0px;
+	text-align: center;
+}
+.paginator a {
+	padding: 2px 6px;
+}
+.paginator a.active {
+	background: #5aabfd;
+	color: #fff;
+	text-decoration: none;
+}
+.paginator a.no-active {
+	text-decoration: none;
+	cursor: default;
+}
+
+.breadcrumbs {
+	color: #818181;
+	padding: 0px 0px 16px 0px;
+}
+.breadcrumbs a {
+	color: #818181;
+}
+.breadcrumbs a img {
+	vertical-align: middle;
+}
+
+/* Слайдер */
+.slider {
+	width: 473px;
+	/*height: auto;*/
+	overflow: hidden;
+	padding: 0px;
+}
+.bx-wrapper {
+	overflow: hidden;
+	/*margin: 0px auto;*/
+}
+.bx-pager {
+	position: absolute;
+	bottom: 12px;
+	right: 10px;
+}
+.pager-link {
+	margin: 0px 2px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(pager-link.png) center no-repeat;
+	overflow: hidden;
+	font-size: 1px;
+	line-height: 40px;
+}
+.pager-active {
+	background: url(pager-active.png) center no-repeat;
+}
+.bx-prev {
+
+}
+.bx-next {
+
+}
+
+/* FancyBox */
+#fancybox-title-over {
+	font-weight: bold;
+}
+
+.button {
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 7px 10px 9px 10px;
+	overflow: visible;
+	border: none;
+	background: url(button.png) repeat-x;
+}
+
+/* Карта сайта */
+.sitemap {
+	margin: 0px -10px 10px -10px;
+}
+.sitemap>div {
+	display: inline-block;
+	margin: 0px 10px 10px 10px;
+	width: 226px;
+	overflow: hidden;
+	vertical-align: top;
+	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 12px;
+}
+.sitemap a {
+	color: #000;
+}
+.sitemap h2{
+	margin: 0px 0px 4px 0px !important;
+}
+.sitemap h2 a {
+	font-size: 18px;
+}
+.sitemap ul {
+	list-style: none;
+}
+.sitemap>div>ul>li>a {
+	font-size: 14px;
+}
+
+/*  Block About  */
+
+.block-about {
+	height: 145px;
+	background: #303638;
+	margin-top: 30px;
+	
+}
+.block-about > div {
+	width: 966px;
+	margin: 0 auto;
+	
+}
+.aboutus {
+	width: 550px;
+	display: inline-block;
+	color: #959595;
+	vertical-align: top;
+	margin: 40px 0 0;
+}
+.aboutus h3 {
+	color: #fff;
+	margin-bottom: 20px;
+}
+.address {
+	width: 230px;
+	display: inline-block;
+	color: #fff;
+	padding-left: 20px;
+	margin: 40px 0 0 160px;
+	vertical-align: top;
+}
+.address span {
+	color: #959595;
+	display: block;
+	margin: 10px 0;
+}
+.address p {
+	margin: 10px 0;
+}
+/* Подвал */
+footer {
+	height: 75px;
+	background: #1d2325;
+}
+.f-wrap {
+	position: relative;
+	color: #fff;
+}
+.f-wrap span {
+	color: #959595;
+}
+
+footer .copy {
+	position: absolute;
+	left: 18px;
+	top: 36px;
+}
+footer .sr {
+	position: absolute;
+	right: 18px;
+	top: 25px;
+	
+	background: url(sr.png) right center no-repeat;
+	padding: 0px 46px 0px 0px;
+	line-height: 18px;
+}
+footer .sr a {
+	color: #fff;
+	text-decoration: none;
+}
+footer .sr u {
+	color: #fff;
+	text-decoration: underline;
+}
