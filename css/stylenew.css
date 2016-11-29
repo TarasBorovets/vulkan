@@ -103,8 +103,9 @@ nav div div a{
 /* Baner */
 .banner {
 	height: 270px;
-    background: url(images/banner.jpg) center top no-repeat; 
-    
+    background: url(/images/banner.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .maintitle{
     position: relative;
@@ -126,11 +127,12 @@ nav div div a{
 }
 .logo{
 	font-family: "Myriad Pro";
-    margin-top: 40px;
-    margin-left:40px;
+    margin-top: 20px;
+    margin-left:32px;
     font-size: 38px;
     color: #fff;
     text-decoration: none;
+    display: inline-block;
     
 }
 .phone {
@@ -153,8 +155,8 @@ list-style-type: circle;
 
 }
 .whyus h1 {
-text-align: left;
-margin: 30px 0 20px 20px;
+text-align: center;
+margin: 30px 0 20px 0;
 
 }
 .whyus h3 {
@@ -163,12 +165,15 @@ margin: 30px 0 20px 20px;
     margin-bottom: 50px;
 }
 .whyus ul{
-	line-height: 4;
+	line-height: 3;
 }
 #italic{
-font-family: cursive;
 display: hidden;
 }
+.margin120{
+	margin-left: 120px;
+}
+
 
 .leftwhy {
 	
@@ -266,12 +271,14 @@ height: auto;
 	font-family: "Myriad Pro";
     font-weight: normal;
     font-size: 24px;
-    margin: 33px 10px 27px 162px;
-    display: inline-block;
+    display: block;
+    text-align: center;
+     margin-bottom: 30px;
+    margin-top: 30px;
 }
 .our_role_list {
 	margin: 0 0 27px 165px;
-    line-height: 1.6;
+    line-height: 2.6;
 }
 
 .breadcrumbs{
@@ -291,7 +298,7 @@ height: auto;
 /* selection criteria 3.html */
 .selection-criteria-3-list{
 	margin: 0 0 27px 165px;
-    line-height: 1.6;
+    line-height: 2.0;
 }
 /* our contacts */
 .ourcontacts{
@@ -300,10 +307,20 @@ height: auto;
 }
 /* about us */
 .aboutus1{
-	margin: 0 0 27px 165px;
+	margin: 0 0 27px 300px;
     line-height: 1.6;
     
 }
 .aboutus1 img{
 	margin-top: 20px;
+}
+
+/* marketing abilities */
+.lineheight16{
+	line-height: 2.0;
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+.lineheight2{
+	line-height: 2.0;
 }
