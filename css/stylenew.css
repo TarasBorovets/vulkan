@@ -148,7 +148,7 @@ nav div div a{
 .whyus{
 line-height: 1.6;
 background-color: #e8e8e8;
-font-family: italic;
+
 }
 .whyus li {
 list-style-type: circle;
@@ -307,9 +307,14 @@ height: auto;
 }
 /* about us */
 .aboutus1{
+	position: relative;
 	margin: 0 0 27px 300px;
     line-height: 1.6;
     
+}
+.center{
+	text-align: center;
+	margin:30px 0 10px 0;
 }
 .aboutus1 img{
 	margin-top: 20px;

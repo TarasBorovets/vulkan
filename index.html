@@ -2,20 +2,64 @@
 <html>
     <head>
         <title>New Advisers </title>
-        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/stylenew.css" type="text/css">
-        <link rel="stylesheet" href="font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/navbar.css" type="text/css">
     </head>
     <body>
-    	<div class="container-fluid"
-    	<header>
-    	
-    		
-    	</header>
-    	
-    	<!-- Banner-->
+    	<div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       New Advisers
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Our role</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Selection criteria<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header">Why us?</li>
+                    <li><a href="#">Selection criteria(1)</a></li>
+                    <li><a href="#">Selection criteria(2)</a></li>
+                    <li><a href="#">Selection criteria(3)</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#">Our marketing abilities</a>
+                </li>
+                <li>
+                    <a href="#">Our proprieatry Database</a>
+                </li>
+                
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Our contacts</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+            
+            <!-- Banner-->
         		<div class= "banner">
         			<div class="row">
     					<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
@@ -26,38 +70,7 @@
 	    				</div>
     				</div>
          		</div>
-         
-        
-        
-       <!-- Navmenu-->
-	<div class="menu">
-	    <nav>
-	        <div>
-	            <a href="our-role.html">Our role</a>
-	        </div>
-	        <div>
-	            <a href="#">Selection criteria</a>
-	        <div>
-	            <a href="selection-criteria-1.html">Selection criteria (1)</a>
-	            <a href="selection-criteria-2.html">Selection criteria (2)</a>
-	            <a href="selection-criteria-3.html">Selection criteria (3)</a>
-	        </div>
-	        </div>
-	        <div>
-	            <a href="our-marketing-abilities.html">Our marketing abilities</a>
-	        </div>
-	        <div>
-	            <a href="our-proprietary-database.html">Our Proprietary Database</a>
-	        </div>
-	        <div>
-	            <a href="about-us.html">About us</a>
-	        </div>
-	        <div>
-	            <a href="our-contacts.html">Our contacts</a>
-	        </div>
-	    </nav>
-
-<!--  Main-->
+            <!--  Main-->
 <section class="whyus">
 <h1>Why us?</h1>
 <div class="row">
@@ -101,13 +114,16 @@
 <div class="footer2">
 	<p>© 2014 <span>New Advisers</span></p>
 </div>
-</footer>	
+</footer>
+            
+        </div>
+        <!-- /#page-content-wrapper -->
 
-
-
-
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+    </div>
+    <!-- /#wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
